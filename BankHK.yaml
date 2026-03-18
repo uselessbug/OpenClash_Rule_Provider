@@ -1,0 +1,173 @@
+payload:
+
+  # -----------------------------------------------
+  # [银行]：香港银行   [Default: HK]
+  # Rule Provider Format: classical
+  # 样本来源:
+  # - https://github.com/Accademia/Additional_Rule_For_Clash/blob/main/Bank/BankHK.yaml
+  # 数据来源:
+  # - https://github.com/specialmenfo/Surge/blob/main/files/Personal/Sgmodule/List/HongKongBank.list
+  # - https://github.com/ESterling8852/shadowrocket-whitelist/blob/main/whitelist/bank.conf
+  # -----------------------------------------------
+
+  # 汇丰香港 HSBC / PayMe
+  # source: Accademia + specialmenfo/Surge + ESterling8852
+  - DOMAIN-SUFFIX,hsbc.com.hk
+  - DOMAIN-SUFFIX,online-banking.hsbc.com.hk
+  - DOMAIN-SUFFIX,vam-hk.cloud1.vv1865.com
+  - DOMAIN-SUFFIX,cloud1.vv1865.com
+  - DOMAIN-SUFFIX,vv1865.com
+  - DOMAIN-SUFFIX,liveperson.net
+  - DOMAIN-SUFFIX,tealiumiq.com
+  - DOMAIN-SUFFIX,eum-appdynamics.com
+  - DOMAIN-SUFFIX,appdynamics.com
+  - DOMAIN-SUFFIX,hsbcdigital.siteintercept.qualtrics.com
+  - DOMAIN-SUFFIX,digicert.com
+  - DOMAIN-SUFFIX,we-stats.com
+  - USER-AGENT,hsbc
+  - USER-AGENT,hsbc*
+  - USER-AGENT,*hsbc
+  - USER-AGENT,payme
+  - USER-AGENT,payme*
+  - USER-AGENT,*payme
+  - PROCESS-NAME,hsbc
+  - PROCESS-NAME,payme
+  - IP-CIDR,203.112.92.0/24
+  - IP-CIDR,162.159.193.3/22,no-resolve
+  - IP-CIDR,162.159.193.5/22,no-resolve
+  - IP-CIDR,104.99.48.140/22,no-resolve
+  - IP-CIDR,17.171.78.198/22,no-resolve
+  - IP-CIDR,23.45.52.76/22,no-resolve
+
+  # 中银香港 BOCHK
+  # source: Accademia + specialmenfo/Surge + ESterling8852
+  - DOMAIN,bochk01.etnet.com.hk
+  - DOMAIN-SUFFIX,bochk.com
+  - DOMAIN-SUFFIX,bochk.com.hk
+  - DOMAIN-SUFFIX,bochkonline.com
+  - DOMAIN-SUFFIX,bochksec.com
+  - USER-AGENT,bochk
+  - USER-AGENT,bochk*
+  - USER-AGENT,*bochk
+  - PROCESS-NAME,bochk
+  - IP-CIDR,203.99.60.0/24
+
+  # 恒生银行 Hang Seng
+  # source: Accademia + ESterling8852
+  - DOMAIN-SUFFIX,hangseng.com
+  - DOMAIN-SUFFIX,hangseng.com.hk
+
+  # 渣打香港 Standard Chartered
+  # source: Accademia + ESterling8852
+  - DOMAIN-SUFFIX,sc.com.hk
+  - DOMAIN-SUFFIX,sc.com
+  - DOMAIN-SUFFIX,standardchartered.com.hk
+
+  # 花旗香港 Citibank HK
+  # source: Accademia + ESterling8852
+  - DOMAIN-SUFFIX,citibank.com.hk
+  - DOMAIN-SUFFIX,citi.com.hk
+
+  # 东亚银行 BEA
+  # source: ESterling8852
+  - DOMAIN-SUFFIX,hkbea.com
+  - DOMAIN-SUFFIX,bea.com.hk
+  - IP-CIDR,202.64.62.0/24
+
+  # 大新银行 Dah Sing
+  # source: specialmenfo/Surge + ESterling8852
+  - DOMAIN,ds-direct.dahsing.com
+  - DOMAIN,dahsing.d2.sc.omtrdc.net
+  - DOMAIN,dahsing.demdex.net
+  - DOMAIN,dahsing.sc.omtrdc.net
+  - DOMAIN,cm.everesttech.net
+  - DOMAIN-SUFFIX,dahsing.com
+  - DOMAIN-SUFFIX,dsb.com.hk
+  - USER-AGENT,dahsing
+  - USER-AGENT,dahsing*
+  - USER-AGENT,*dahsing
+  - PROCESS-NAME,dahsing
+
+  # 南洋商业银行 NCB
+  # source: Accademia + ESterling8852
+  - DOMAIN-SUFFIX,ncb.com.hk
+
+  # 招商永隆 / 永隆银行
+  # source: Accademia + ESterling8852
+  - DOMAIN-SUFFIX,cmbwinglungbank.com
+  - DOMAIN-SUFFIX,winglungbank.com
+
+  # 中信银行（国际） CNCBI
+  # source: Accademia + specialmenfo/Surge
+  - DOMAIN,ibanking.cncbinternational.com
+  - DOMAIN-SUFFIX,cncbinternational.com
+  - DOMAIN-KEYWORD,cncbinternational
+
+  # 华侨永亨 OCBC Wing Hang
+  # source: Accademia
+  - DOMAIN-SUFFIX,ocbcwhhk.com
+
+  # 创兴银行
+  # source: ESterling8852
+  - DOMAIN-SUFFIX,chbank.com
+
+  # 上海商业银行
+  # source: ESterling8852
+  - DOMAIN-SUFFIX,shacombank.com.hk
+
+  # 众安银行 ZA Bank
+  # source: Accademia + specialmenfo/Surge + ESterling8852
+  - DOMAIN-SUFFIX,za.group
+  - DOMAIN-SUFFIX,zabank.hk
+  - DOMAIN-SUFFIX,cdn.zaticdn.com
+  - DOMAIN-KEYWORD,za.group
+
+  # 天星银行 Airstar Bank
+  # source: specialmenfo/Surge
+  - DOMAIN,data.help.jr.mi.com
+  - DOMAIN,verify.sec.xiaomi.comcaptcha
+  - DOMAIN-SUFFIX,xiaomi.comcaptcha
+  - DOMAIN-SUFFIX,airstarbank.com
+  - USER-AGENT,airstarbank
+  - USER-AGENT,airstarbank*
+  - USER-AGENT,*airstarbank
+  - PROCESS-NAME,airstarbank
+
+  # 理慧银行 livi Bank
+  # source: specialmenfo/Surge + ESterling8852
+  - DOMAIN,livibank.queue-it.net
+  - DOMAIN,ms.livibank.com
+  - DOMAIN,appgw.livibank.com
+  - DOMAIN-SUFFIX,livibank.com
+  - DOMAIN-SUFFIX,livi.hk
+  - DOMAIN-SUFFIX,livi.io
+  - USER-AGENT,livibank
+  - USER-AGENT,livibank*
+  - USER-AGENT,*livibank
+  - PROCESS-NAME,livibank
+  - IP-CIDR,183.240.181.35/22,no-resolve
+
+  # 富融银行 Fusion Bank
+  # source: ESterling8852
+  - DOMAIN-SUFFIX,fusionbank.com
+  - DOMAIN-SUFFIX,fusionbank.com.hk
+
+  # 蚂蚁银行 Ant Bank
+  # source: ESterling8852
+  - DOMAIN-SUFFIX,antbank.hk
+  - DOMAIN-SUFFIX,antfin.com
+
+  # 平安壹账通银行（PAOB）
+  # source: ESterling8852
+  - DOMAIN-SUFFIX,paob.com.hk
+  - DOMAIN-SUFFIX,paobank.com
+
+  # Mox Bank
+  # source: ESterling8852
+  - DOMAIN-SUFFIX,mox.com
+  - DOMAIN-SUFFIX,moxbank.com
+
+  # 星展香港 DBS
+  # source: Accademia + specialmenfo/Surge
+  - DOMAIN,mobile-banking.hk.dbs.com
+  - DOMAIN-SUFFIX,dbs.com.hk

@@ -3,9 +3,8 @@ payload:
   # -----------------------------------------------
   # [银行]：香港银行   [Default: HK]
   # Rule Provider Format: classical
-  # 样本来源:
-  # - https://github.com/Accademia/Additional_Rule_For_Clash/blob/main/Bank/BankHK.yaml
   # 数据来源:
+  # - https://github.com/Accademia/Additional_Rule_For_Clash/blob/main/Bank/BankHK.yaml
   # - https://github.com/specialmenfo/Surge/blob/main/files/Personal/Sgmodule/List/HongKongBank.list
   # - https://github.com/ESterling8852/shadowrocket-whitelist/blob/main/whitelist/bank.conf
   # -----------------------------------------------

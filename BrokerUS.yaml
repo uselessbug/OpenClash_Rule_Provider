@@ -1,0 +1,30 @@
+payload:
+
+  # -----------------------------------------------
+  # 数据来源:
+  # - https://github.com/ResidualBlood/Clash_Rules/blob/master/Myself/Ruleset/financial.list
+  # -----------------------------------------------
+
+  # IBKR
+  DOMAIN-SUFFIX,interactivebrokers.com
+  DOMAIN-SUFFIX,ibkr.com
+  DOMAIN-SUFFIX,ibllc.com
+  DOMAIN-SUFFIX,ibllc.com.cn
+  DOMAIN-SUFFIX,ibkr.com.cn
+  DOMAIN-KEYWORD,interactivebrokers
+  
+  # --- Charles Schwab & thinkorswim ---
+  DOMAIN-SUFFIX,schwab.com
+  DOMAIN-SUFFIX,schwab.net
+  DOMAIN-SUFFIX,schwabcdn.com
+  DOMAIN-SUFFIX,thinkorswim.com
+  DOMAIN-SUFFIX,tdameritrade.com
+  IP-CIDR,162.93.0.0/16,no-resolve
+  IP-CIDR,74.114.36.0/22,no-resolve
+  
+  # --- Firstrade ---
+  DOMAIN-SUFFIX,firstrade.com
+  DOMAIN-SUFFIX,firstrade.info
+  DOMAIN-SUFFIX,apexclearing.com
+  DOMAIN-SUFFIX,apexfintech.com
+  DOMAIN-SUFFIX,apexfintechdocuments.com

@@ -121,7 +121,7 @@ payload:
   - DOMAIN-SUFFIX,cdn.zaticdn.com
   - DOMAIN-KEYWORD,za.group
 
-  # 天星银行 Airstar Bank
+  # 象象银行 Ele Bank / 天星银行 Airstar Bank
   # source: specialmenfo/Surge
   - DOMAIN,data.help.jr.mi.com
   - DOMAIN,verify.sec.xiaomi.comcaptcha
@@ -131,6 +131,11 @@ payload:
   - USER-AGENT,airstarbank*
   - USER-AGENT,*airstarbank
   - PROCESS-NAME,airstarbank
+  - DOMAIN-SUFFIX,elebank.com
+  - USER-AGENT,elebank
+  - USER-AGENT,elebank*
+  - USER-AGENT,*elebank
+  - PROCESS-NAME,elebank
 
   # 理慧银行 livi Bank
   # source: specialmenfo/Surge + ESterling8852

@@ -1,0 +1,11 @@
+payload:
+
+  # Chief Securities
+  DOMAIN-SUFFIX,zft2000.com
+  DOMAIN-SUFFIX,zft2025.com
+  DOMAIN-SUFFIX,volces.com
+  DOMAIN-KEYWORD,chief
+  DOMAIN-KEYWORD,1979
+  DOMAIN-KEYWORD,engage
+  IP-CIDR,183.87.34.6/32
+  IP-CIDR,189.1.244.101/32

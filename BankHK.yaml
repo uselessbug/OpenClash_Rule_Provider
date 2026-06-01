@@ -127,11 +127,13 @@ payload:
   - DOMAIN,verify.sec.xiaomi.comcaptcha
   - DOMAIN-SUFFIX,xiaomi.comcaptcha
   - DOMAIN-SUFFIX,airstarbank.com
+  - DOMAIN-KEYWORD,airstarbank
   - USER-AGENT,airstarbank
   - USER-AGENT,airstarbank*
   - USER-AGENT,*airstarbank
   - PROCESS-NAME,airstarbank
   - DOMAIN-SUFFIX,elebank.com
+  - DOMAIN-KEYWORD,elebank
   - USER-AGENT,elebank
   - USER-AGENT,elebank*
   - USER-AGENT,*elebank

@@ -1,0 +1,152 @@
+payload:
+
+  # -----------------------------------------------
+  # [银行]：英国银行及存款机构   [Default: UK]
+  # Rule Provider Format: classical
+  # 数据来源:
+  # - https://github.com/iniwex5/tools/blob/main/rules/UK.list
+  # - https://github.com/Accademia/Additional_Rule_For_Clash/blob/main/Bank/BankUK.yaml
+  # - https://github.com/Accademia/Additional_Rule_For_Clash/blob/main/VirtualFinance/Monzo.yaml
+  # -----------------------------------------------
+
+  # UK Banks - Shared Infrastructure
+  - DOMAIN-SUFFIX,online-metrix.net
+  - DOMAIN-SUFFIX,yapily.com
+
+  # Chase UK
+  - DOMAIN-SUFFIX,chase.co.uk
+  - DOMAIN-SUFFIX,chase.uk
+  - DOMAIN-SUFFIX,chase.com
+
+  # Barclays
+  - DOMAIN-SUFFIX,barclays.co.uk
+  - DOMAIN-SUFFIX,barclays.com
+  - DOMAIN-SUFFIX,barclays.mobi
+  - DOMAIN-SUFFIX,barclaycard.co.uk
+  - DOMAIN-SUFFIX,home.barclays
+  - DOMAIN-SUFFIX,barclayscorporate.com
+  - DOMAIN-SUFFIX,barclays.net
+  - DOMAIN,barclaysuk.sc.omtrdc.net
+  - DOMAIN,bclays-ads.aimatch.com
+  - DOMAIN-KEYWORD,barclays
+
+  # Lloyds Banking Group
+  - DOMAIN-SUFFIX,lloydsbank.co.uk
+  - DOMAIN-SUFFIX,lloydsbank.com
+  - DOMAIN-SUFFIX,halifax.co.uk
+  - DOMAIN-SUFFIX,halifax-online.co.uk
+  - DOMAIN-SUFFIX,bankofscotland.co.uk
+  - DOMAIN-SUFFIX,amazontrust.com
+  - DOMAIN-SUFFIX,dynatrace.com
+  - DOMAIN-SUFFIX,demdex.net
+  - DOMAIN-SUFFIX,cm.everesttech.net
+  - DOMAIN-SUFFIX,omtrdc.net
+  - DOMAIN-KEYWORD,lloydsbank
+  - DOMAIN-KEYWORD,halifax
+
+  # TSB Bank
+  - DOMAIN-SUFFIX,tsb.co.uk
+
+  # HSBC UK
+  - DOMAIN-SUFFIX,hsbc.co.uk
+  - DOMAIN-SUFFIX,uk.hsbc.com
+  - DOMAIN-SUFFIX,business.hsbc.uk
+
+  # first direct
+  - DOMAIN-SUFFIX,firstdirect.com
+  - DOMAIN-SUFFIX,firstdirect.co.uk
+  - DOMAIN-SUFFIX,reset-help.firstdirect.com
+  - DOMAIN-SUFFIX,mortgages.firstdirect.com
+
+  # M&S Bank
+  - DOMAIN-SUFFIX,bank.marksandspencer.com
+
+  # Monzo Bank
+  - DOMAIN-SUFFIX,monzo.com
+  - DOMAIN-SUFFIX,monzo-alt.net
+  - DOMAIN-SUFFIX,monzo.me
+  - DOMAIN-SUFFIX,monzo.statuspage.io
+  - DOMAIN-SUFFIX,nonprod-ffs.io
+  - DOMAIN-SUFFIX,ws-eu.pusher.com
+  - DOMAIN-KEYWORD,monzo
+
+  # Starling Bank
+  - DOMAIN-SUFFIX,starlingbank.com
+  - DOMAIN-SUFFIX,app.starlingbank.com
+  - DOMAIN-SUFFIX,developer.starlingbank.com
+  - DOMAIN-SUFFIX,help.starlingbank.com
+  - DOMAIN-SUFFIX,starlingbank.statuspage.io
+
+  # Kroo Bank
+  - DOMAIN-SUFFIX,kroo.com
+
+  # Nationwide Building Society
+  - DOMAIN-SUFFIX,nationwide.co.uk
+  - DOMAIN-SUFFIX,nationwidemortgages.co.uk
+  - DOMAIN-KEYWORD,nationwide
+  - IP-CIDR,185.203.72.0/22
+
+  # NatWest
+  - DOMAIN-SUFFIX,natwest.com
+
+  # Santander UK
+  - DOMAIN-SUFFIX,santander.co.uk
+
+  # The Co-operative Bank
+  - DOMAIN-SUFFIX,co-operativebank.co.uk
+
+  # Metro Bank
+  - DOMAIN-SUFFIX,metrobankonline.co.uk
+
+  # Tesco Bank
+  - DOMAIN-SUFFIX,tescobank.com
+
+  # Atom Bank
+  - DOMAIN-SUFFIX,atombank.co.uk
+  - DOMAIN-SUFFIX,atombank.com
+
+  # Investec Bank
+  - DOMAIN-SUFFIX,investec.com
+
+  # Gatehouse Bank
+  - DOMAIN-SUFFIX,gatehousebank.com
+
+  # Secure Trust Bank
+  - DOMAIN-SUFFIX,securetrustbank.com
+
+  # Hampden & Co
+  - DOMAIN-SUFFIX,hampdenandco.com
+
+  # Paragon Bank
+  - DOMAIN-SUFFIX,paragonbank.co.uk
+
+  # Aldermore Bank
+  - DOMAIN-SUFFIX,aldermore.co.uk
+
+  # Shawbrook Bank
+  - DOMAIN-SUFFIX,shawbrook.co.uk
+
+  # Ikano Bank
+  - DOMAIN-SUFFIX,ikano.co.uk
+
+  # Charter Savings Bank
+  - DOMAIN-SUFFIX,chartersavingsbank.co.uk
+
+  # Standard Chartered UK
+  - DOMAIN-SUFFIX,sc.co.uk
+
+  # iFAST Global Bank
+  - DOMAIN-SUFFIX,ifastgb.com
+  - DOMAIN-SUFFIX,ifastcorp.com
+
+  # Zempler Bank / Cashplus
+  - DOMAIN-SUFFIX,zemplerbank.com
+  - DOMAIN-SUFFIX,cashplus.com
+  - DOMAIN,secure.membersaccounts.com
+
+  # Tandem Bank
+  - DOMAIN-SUFFIX,tandem.co.uk
+
+  # Virgin Money
+  - DOMAIN-SUFFIX,virginmoney.com
+  - DOMAIN-SUFFIX,virginmoneyukplc.com

@@ -11,7 +11,9 @@ payload:
   - DOMAIN-SUFFIX,ibllc.com
   - DOMAIN-SUFFIX,ibllc.com.cn
   - DOMAIN-SUFFIX,ibkr.com.cn
+  - DOMAIN-SUFFIX,clientam.com
   - DOMAIN-KEYWORD,interactivebrokers
+  - DOMAIN-KEYWORD,ibkr
   
   # --- Charles Schwab & thinkorswim ---
   - DOMAIN-SUFFIX,schwab.com

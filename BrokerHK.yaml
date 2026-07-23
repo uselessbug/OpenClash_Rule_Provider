@@ -9,3 +9,8 @@ payload:
   - DOMAIN-KEYWORD,engage
   - IP-CIDR,183.87.34.6/32
   - IP-CIDR,189.1.244.101/32
+
+  # Longbridge
+  - DOMAIN-KEYWORD,longbridge
+  - DOMAIN-SUFFIX,lbctrl.com
+  - DOMAIN-SUFFIX,lbkrs.com

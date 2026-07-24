@@ -7,10 +7,11 @@ payload:
   # - https://github.com/Accademia/Additional_Rule_For_Clash/blob/main/Bank/BankHK.yaml
   # - https://github.com/specialmenfo/Surge/blob/main/files/Personal/Sgmodule/List/HongKongBank.list
   # - https://github.com/ESterling8852/shadowrocket-whitelist/blob/main/whitelist/bank.conf
+  # - https://github.com/KujouYuko/ClashRules/blob/main/Clash/Rules/HKBank.list
   # -----------------------------------------------
 
   # 汇丰香港 HSBC / PayMe
-  # source: Accademia + specialmenfo/Surge + ESterling8852
+  # source: Accademia/Additional_Rule_For_Clash, specialmenfo/Surge, ESterling8852/shadowrocket-whitelist, KujouYuko/ClashRules
   - DOMAIN-SUFFIX,hsbc.com.hk
   - DOMAIN-SUFFIX,online-banking.hsbc.com.hk
   - DOMAIN-SUFFIX,vam-hk.cloud1.vv1865.com
@@ -39,7 +40,7 @@ payload:
   - IP-CIDR,23.45.52.76/22,no-resolve
 
   # 中银香港 BOCHK
-  # source: Accademia + specialmenfo/Surge + ESterling8852
+  # source: Accademia/Additional_Rule_For_Clash, specialmenfo/Surge, ESterling8852/shadowrocket-whitelist, KujouYuko/ClashRules
   - DOMAIN,bochk01.etnet.com.hk
   - DOMAIN-SUFFIX,bochk.com
   - DOMAIN-SUFFIX,bochk.com.hk
@@ -52,29 +53,29 @@ payload:
   - IP-CIDR,203.99.60.0/24
 
   # 恒生银行 Hang Seng
-  # source: Accademia + ESterling8852
+  # source: Accademia/Additional_Rule_For_Clash, ESterling8852/shadowrocket-whitelist, KujouYuko/ClashRules
   - DOMAIN-SUFFIX,hangseng.com
   - DOMAIN-SUFFIX,hangseng.com.hk
 
   # 渣打香港 Standard Chartered
-  # source: Accademia + ESterling8852
+  # source: Accademia/Additional_Rule_For_Clash, ESterling8852/shadowrocket-whitelist
   - DOMAIN-SUFFIX,sc.com.hk
   - DOMAIN-SUFFIX,sc.com
   - DOMAIN-SUFFIX,standardchartered.com.hk
 
-  # 花旗香港 Citibank HK
-  # source: Accademia + ESterling8852
+  # 花旗香港 Citibank
+  # source: Accademia/Additional_Rule_For_Clash, ESterling8852/shadowrocket-whitelist
   - DOMAIN-SUFFIX,citibank.com.hk
   - DOMAIN-SUFFIX,citi.com.hk
 
   # 东亚银行 BEA
-  # source: ESterling8852
+  # source: ESterling8852/shadowrocket-whitelist, KujouYuko/ClashRules
   - DOMAIN-SUFFIX,hkbea.com
   - DOMAIN-SUFFIX,bea.com.hk
   - IP-CIDR,202.64.62.0/24
 
   # 大新银行 Dah Sing
-  # source: specialmenfo/Surge + ESterling8852
+  # source: specialmenfo/Surge, ESterling8852/shadowrocket-whitelist
   - DOMAIN,ds-direct.dahsing.com
   - DOMAIN,dahsing.d2.sc.omtrdc.net
   - DOMAIN,dahsing.demdex.net
@@ -87,42 +88,57 @@ payload:
   - USER-AGENT,*dahsing
   - PROCESS-NAME,dahsing
 
+  # 交通银行（香港） BOCOM (HK)
+  # source: KujouYuko/ClashRules
+  - DOMAIN-SUFFIX,hk.bankcomm.com
+
+  # 工银亚洲 ICBC (Asia)
+  # source: KujouYuko/ClashRules
+  - DOMAIN-SUFFIX,icbcasia.com
+
   # 南洋商业银行 NCB
-  # source: Accademia + ESterling8852
+  # source: Accademia/Additional_Rule_For_Clash, ESterling8852/shadowrocket-whitelist, KujouYuko/ClashRules
   - DOMAIN-SUFFIX,ncb.com.hk
 
-  # 招商永隆 / 永隆银行
-  # source: Accademia + ESterling8852
+  # 招商永隆银行 CMB Wing Lung
+  # source: Accademia/Additional_Rule_For_Clash, ESterling8852/shadowrocket-whitelist, KujouYuko/ClashRules
   - DOMAIN-SUFFIX,cmbwinglungbank.com
   - DOMAIN-SUFFIX,winglungbank.com
 
   # 中信银行（国际） CNCBI
-  # source: Accademia + specialmenfo/Surge
+  # source: Accademia/Additional_Rule_For_Clash, specialmenfo/Surge, KujouYuko/ClashRules
   - DOMAIN,ibanking.cncbinternational.com
   - DOMAIN-SUFFIX,cncbinternational.com
   - DOMAIN-KEYWORD,cncbinternational
 
-  # 华侨永亨 OCBC Wing Hang
-  # source: Accademia
+  # 华侨银行（香港） OCBC Hong Kong
+  # source: Accademia/Additional_Rule_For_Clash
   - DOMAIN-SUFFIX,ocbcwhhk.com
 
-  # 创兴银行
-  # source: ESterling8852
+  # 创兴银行 Chong Hing
+  # source: ESterling8852/shadowrocket-whitelist
   - DOMAIN-SUFFIX,chbank.com
 
-  # 上海商业银行
-  # source: ESterling8852
+  # 上海商业银行 Shanghai Commercial Bank
+  # source: ESterling8852/shadowrocket-whitelist
   - DOMAIN-SUFFIX,shacombank.com.hk
 
+  # 汇立银行 WeLab Bank
+  # source: KujouYuko/ClashRules
+  - DOMAIN-SUFFIX,welab.bank
+
   # 众安银行 ZA Bank
-  # source: Accademia + specialmenfo/Surge + ESterling8852
+  # source: Accademia/Additional_Rule_For_Clash, specialmenfo/Surge, ESterling8852/shadowrocket-whitelist, KujouYuko/ClashRules
   - DOMAIN-SUFFIX,za.group
   - DOMAIN-SUFFIX,zabank.hk
-  - DOMAIN-SUFFIX,cdn.zaticdn.com
+  - DOMAIN-SUFFIX,zafinsvc.com
+  - DOMAIN-SUFFIX,zainvest.group
+  - DOMAIN-SUFFIX,zajourney.com
+  - DOMAIN-SUFFIX,zaticdn.com
   - DOMAIN-KEYWORD,za.group
 
-  # 象象银行 Ele Bank / 天星银行 Airstar Bank
-  # source: specialmenfo/Surge
+  # 象象银行 EleBank（原天星银行 Airstar Bank）
+  # source: specialmenfo/Surge, KujouYuko/ClashRules
   - DOMAIN,data.help.jr.mi.com
   - DOMAIN,verify.sec.xiaomi.comcaptcha
   - DOMAIN-SUFFIX,xiaomi.comcaptcha
@@ -139,8 +155,8 @@ payload:
   - USER-AGENT,*elebank
   - PROCESS-NAME,elebank
 
-  # 理慧银行 livi Bank
-  # source: specialmenfo/Surge + ESterling8852
+  # 理慧银行 livi bank
+  # source: specialmenfo/Surge, ESterling8852/shadowrocket-whitelist
   - DOMAIN,livibank.queue-it.net
   - DOMAIN,ms.livibank.com
   - DOMAIN,appgw.livibank.com
@@ -154,26 +170,27 @@ payload:
   - IP-CIDR,183.240.181.35/22,no-resolve
 
   # 富融银行 Fusion Bank
-  # source: ESterling8852
+  # source: ESterling8852/shadowrocket-whitelist, KujouYuko/ClashRules
   - DOMAIN-SUFFIX,fusionbank.com
   - DOMAIN-SUFFIX,fusionbank.com.hk
 
-  # 蚂蚁银行 Ant Bank
-  # source: ESterling8852
+  # 蚂蚁银行（香港） Ant Bank
+  # source: ESterling8852/shadowrocket-whitelist, KujouYuko/ClashRules
   - DOMAIN-SUFFIX,antbank.hk
   - DOMAIN-SUFFIX,antfin.com
 
-  # 平安壹账通银行（PAOB）
-  # source: ESterling8852
+  # 平安数字银行 Ping An Digital Bank（原平安壹账通银行 PAOB）
+  # source: ESterling8852/shadowrocket-whitelist
   - DOMAIN-SUFFIX,paob.com.hk
   - DOMAIN-SUFFIX,paobank.com
+  - DOMAIN-SUFFIX,pingandb.com
 
   # Mox Bank
-  # source: ESterling8852
+  # source: ESterling8852/shadowrocket-whitelist
   - DOMAIN-SUFFIX,mox.com
   - DOMAIN-SUFFIX,moxbank.com
 
   # 星展香港 DBS
-  # source: Accademia + specialmenfo/Surge
+  # source: Accademia/Additional_Rule_For_Clash, specialmenfo/Surge
   - DOMAIN,mobile-banking.hk.dbs.com
   - DOMAIN-SUFFIX,dbs.com.hk

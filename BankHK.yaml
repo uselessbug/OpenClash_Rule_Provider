@@ -72,6 +72,7 @@ payload:
   # source: ESterling8852/shadowrocket-whitelist, KujouYuko/ClashRules
   - DOMAIN-SUFFIX,hkbea.com
   - DOMAIN-SUFFIX,bea.com.hk
+  - DOMAIN-SUFFIX,hkbea-cyberbanking.com
   - IP-CIDR,202.64.62.0/24
 
   # 大新银行 Dah Sing

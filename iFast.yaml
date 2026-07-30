@@ -1,9 +1,12 @@
 payload:
 
+  - DOMAIN-SUFFIX,fsm.global
   - DOMAIN-SUFFIX,fsmone.com
   - DOMAIN-SUFFIX,fsmone.com.hk
   - DOMAIN-SUFFIX,fsmone.com.my
   - DOMAIN-SUFFIX,fundsupermart.com
+  - DOMAIN-SUFFIX,fundsupermart.com.hk
+  - DOMAIN-SUFFIX,fundsupermart.com.my
   - DOMAIN-SUFFIX,ifastcapital.com.my
   - DOMAIN-SUFFIX,ifastcorp.com
   - DOMAIN-SUFFIX,ifastfinancial.co.in

@@ -150,3 +150,6 @@ payload:
   # Virgin Money
   - DOMAIN-SUFFIX,virginmoney.com
   - DOMAIN-SUFFIX,virginmoneyukplc.com
+
+  # Zopa bank
+  - DOMAIN-SUFFIX,zopa.com

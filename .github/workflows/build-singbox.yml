@@ -1,0 +1,112 @@
+name: Build sing-box rule sets
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "*.yaml"
+      - "config/**"
+      - "tools/**"
+      - ".github/workflows/build-singbox.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "*.yaml"
+      - "config/**"
+      - "tools/**"
+      - ".github/workflows/build-singbox.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sing-box-ruleset
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install converter dependencies
+        run: python -m pip install --disable-pip-version-check "PyYAML==6.0.2"
+
+      - name: Build source rule sets
+        shell: bash
+        run: |
+          export SOURCE_DATE_EPOCH="$(git show -s --format=%ct HEAD)"
+          python tools/build_singbox.py
+
+      - name: Install sing-box compiler
+        shell: bash
+        env:
+          SING_BOX_VERSION: "1.12.19"
+        run: |
+          set -euo pipefail
+          archive="sing-box-${SING_BOX_VERSION}-linux-amd64.tar.gz"
+          url="https://github.com/SagerNet/sing-box/releases/download/v${SING_BOX_VERSION}/${archive}"
+          curl -fsSL "${url}" -o "/tmp/${archive}"
+          tar -xzf "/tmp/${archive}" -C /tmp
+          sudo install -m 0755 "/tmp/sing-box-${SING_BOX_VERSION}-linux-amd64/sing-box" /usr/local/bin/sing-box
+          sing-box version
+
+      - name: Compile binary rule sets
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist/binary
+          for source in dist/source/*.json; do
+            name="$(basename "${source}" .json)"
+            sing-box rule-set compile --output "dist/binary/${name}.srs" "${source}"
+          done
+
+      - name: Publish sing-box branch
+        if: github.event_name != 'pull_request'
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          publish_dir="/tmp/sing-box-publish"
+          rm -rf "${publish_dir}"
+
+          if git ls-remote --exit-code --heads origin sing-box >/dev/null 2>&1; then
+            git fetch origin sing-box
+            git worktree add -B sing-box "${publish_dir}" origin/sing-box
+            find "${publish_dir}" -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          else
+            git worktree add --detach "${publish_dir}"
+            (
+              cd "${publish_dir}"
+              git switch --orphan sing-box
+              git rm -rf . >/dev/null 2>&1 || true
+            )
+          fi
+
+          cp -a dist/. "${publish_dir}/"
+
+          (
+            cd "${publish_dir}"
+            git add -A
+            if git diff --cached --quiet; then
+              echo "No generated changes to publish."
+              exit 0
+            fi
+            git commit -m "chore: update sing-box rule sets"
+            git push origin HEAD:sing-box
+          )

@@ -3,17 +3,9 @@
     "rule_set+": [
       {
         "type": "remote",
-        "tag": "uselessbug-direct-domain",
+        "tag": "uselessbug-direct",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/uselessbug/OpenClash_Rule_Provider/sing-box/binary/direct-domain.srs",
-        "download_detour": "proxy",
-        "update_interval": "6h"
-      },
-      {
-        "type": "remote",
-        "tag": "uselessbug-direct-ip",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/uselessbug/OpenClash_Rule_Provider/sing-box/binary/direct-ip.srs",
+        "url": "https://raw.githubusercontent.com/uselessbug/OpenClash_Rule_Provider/sing-box/binary/direct.srs",
         "download_detour": "proxy",
         "update_interval": "6h"
       }
@@ -21,8 +13,7 @@
     "+rules": [
       {
         "rule_set": [
-          "uselessbug-direct-domain",
-          "uselessbug-direct-ip"
+          "uselessbug-direct"
         ],
         "outbound": "bypass"
       }

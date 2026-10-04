@@ -7,6 +7,14 @@ sources:
     path: BankHK.yaml
     behavior: classical
 
+  - name: BankUS
+    url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/main/Bank/BankUS_Domain.yaml
+    behavior: domain
+
+  - name: BankSG
+    url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/main/Bank/BankSG_Domain.yaml
+    behavior: domain
+
   - name: BankUK
     path: BankUK.yaml
     behavior: classical
@@ -17,6 +25,14 @@ sources:
 
   - name: BrokerUS
     path: BrokerUS.yaml
+    behavior: classical
+
+  - name: Wise
+    url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/main/VirtualFinance/Wise.yaml
+    behavior: classical
+
+  - name: Revolut
+    url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/main/VirtualFinance/Revolut.yaml
     behavior: classical
 
   - name: iFast

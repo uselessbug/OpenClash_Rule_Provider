@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-10-04T01:26:21Z",
+  "format_version": 1,
+  "sources": {
+    "BankDE": {
+      "domain_suffix": 13
+    },
+    "BankHK": {
+      "domain": 13,
+      "domain_keyword": 4,
+      "domain_suffix": 60,
+      "ip_cidr": 8
+    },
+    "BankUK": {
+      "domain": 3,
+      "domain_keyword": 5,
+      "domain_suffix": 70,
+      "ip_cidr": 1
+    },
+    "BrokerHK": {
+      "domain_keyword": 4,
+      "domain_suffix": 5,
+      "ip_cidr": 2
+    },
+    "BrokerUS": {
+      "domain_keyword": 2,
+      "domain_suffix": 16,
+      "ip_cidr": 2
+    },
+    "iFast": {
+      "domain_suffix": 15
+    },
+    "CrackBypass": {
+      "domain": 4
+    },
+    "OtherBypass": {
+      "domain": 1,
+      "domain_suffix": 3
+    }
+  },
+  "output": {
+    "direct-domain": {
+      "domain": 21,
+      "domain_suffix": 182,
+      "domain_keyword": 15
+    },
+    "direct-ip": {
+      "ip_cidr": 13
+    }
+  },
+  "warnings": [
+    "BankHK.yaml:13: skipped Android-incompatible/unsupported rule: USER-AGENT,hsbc",
+    "BankHK.yaml:14: skipped Android-incompatible/unsupported rule: USER-AGENT,hsbc*",
+    "BankHK.yaml:15: skipped Android-incompatible/unsupported rule: USER-AGENT,*hsbc",
+    "BankHK.yaml:16: skipped Android-incompatible/unsupported rule: USER-AGENT,payme",
+    "BankHK.yaml:17: skipped Android-incompatible/unsupported rule: USER-AGENT,payme*",
+    "BankHK.yaml:18: skipped Android-incompatible/unsupported rule: USER-AGENT,*payme",
+    "BankHK.yaml:19: skipped Android-incompatible/unsupported rule: PROCESS-NAME,hsbc",
+    "BankHK.yaml:20: skipped Android-incompatible/unsupported rule: PROCESS-NAME,payme",
+    "BankHK.yaml:32: skipped Android-incompatible/unsupported rule: USER-AGENT,bochk",
+    "BankHK.yaml:33: skipped Android-incompatible/unsupported rule: USER-AGENT,bochk*",
+    "BankHK.yaml:34: skipped Android-incompatible/unsupported rule: USER-AGENT,*bochk",
+    "BankHK.yaml:35: skipped Android-incompatible/unsupported rule: PROCESS-NAME,bochk",
+    "BankHK.yaml:55: skipped Android-incompatible/unsupported rule: USER-AGENT,dahsing",
+    "BankHK.yaml:56: skipped Android-incompatible/unsupported rule: USER-AGENT,dahsing*",
+    "BankHK.yaml:57: skipped Android-incompatible/unsupported rule: USER-AGENT,*dahsing",
+    "BankHK.yaml:58: skipped Android-incompatible/unsupported rule: PROCESS-NAME,dahsing",
+    "BankHK.yaml:83: skipped Android-incompatible/unsupported rule: USER-AGENT,airstarbank",
+    "BankHK.yaml:84: skipped Android-incompatible/unsupported rule: USER-AGENT,airstarbank*",
+    "BankHK.yaml:85: skipped Android-incompatible/unsupported rule: USER-AGENT,*airstarbank",
+    "BankHK.yaml:86: skipped Android-incompatible/unsupported rule: PROCESS-NAME,airstarbank",
+    "BankHK.yaml:89: skipped Android-incompatible/unsupported rule: USER-AGENT,elebank",
+    "BankHK.yaml:90: skipped Android-incompatible/unsupported rule: USER-AGENT,elebank*",
+    "BankHK.yaml:91: skipped Android-incompatible/unsupported rule: USER-AGENT,*elebank",
+    "BankHK.yaml:92: skipped Android-incompatible/unsupported rule: PROCESS-NAME,elebank",
+    "BankHK.yaml:99: skipped Android-incompatible/unsupported rule: USER-AGENT,livibank",
+    "BankHK.yaml:100: skipped Android-incompatible/unsupported rule: USER-AGENT,livibank*",
+    "BankHK.yaml:101: skipped Android-incompatible/unsupported rule: USER-AGENT,*livibank",
+    "BankHK.yaml:102: skipped Android-incompatible/unsupported rule: PROCESS-NAME,livibank"
+  ]
+}

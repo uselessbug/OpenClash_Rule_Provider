@@ -1,0 +1,32 @@
+sources:
+  - name: BankDE
+    path: BankDE_Domain.yaml
+    behavior: domain
+
+  - name: BankHK
+    path: BankHK.yaml
+    behavior: classical
+
+  - name: BankUK
+    path: BankUK.yaml
+    behavior: classical
+
+  - name: BrokerHK
+    path: BrokerHK.yaml
+    behavior: classical
+
+  - name: BrokerUS
+    path: BrokerUS.yaml
+    behavior: classical
+
+  - name: iFast
+    path: iFast.yaml
+    behavior: classical
+
+  - name: CrackBypass
+    path: Crack_Bypass_Domain.yaml
+    behavior: domain
+
+  - name: OtherBypass
+    path: Other_Bypass_Domain.yaml
+    behavior: domain

@@ -1,6 +1,8 @@
 name: Build sing-box rule sets
 
 on:
+  schedule:
+    - cron: "17 19 * * *"
   pull_request:
     branches:
       - main

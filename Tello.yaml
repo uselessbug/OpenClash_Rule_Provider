@@ -1,0 +1,5 @@
+payload:
+
+  - DOMAIN-SUFFIX,tello.com
+  - DOMAIN,mobileapi.keepcalling.net
+  - DOMAIN,api.keepcalling.net

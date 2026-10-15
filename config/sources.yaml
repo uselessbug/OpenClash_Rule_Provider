@@ -39,6 +39,10 @@ sources:
     path: iFast.yaml
     behavior: classical
 
+  - name: Tello
+    path: Tello.yaml
+    behavior: classical
+
   - name: CrackBypass
     path: Crack_Bypass_Domain.yaml
     behavior: domain

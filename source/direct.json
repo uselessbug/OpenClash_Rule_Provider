@@ -3,6 +3,7 @@
   "rules": [
     {
       "domain": [
+        "api.keepcalling.net",
         "appgw.livibank.com",
         "auth.cevio.jp",
         "auth.dreamtonics.com",
@@ -20,6 +21,7 @@
         "log-58144bf0.we-stats.com",
         "mobile-banking.hk.dbs.com",
         "mobile.eum-appdynamics.com",
+        "mobileapi.keepcalling.net",
         "ms.livibank.com",
         "secure.membersaccounts.com",
         "sg.hsbc.com",
@@ -238,6 +240,7 @@
         "tdameritrade.com",
         "tealiumiq.com",
         "tech26.de",
+        "tello.com",
         "tescobank.com",
         "thinkorswim.com",
         "truist.com",

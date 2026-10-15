@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T12:33:34Z",
+  "generated_at": "2026-10-15T05:45:44Z",
   "format_version": 1,
   "sources": {
     "BankDE": {
@@ -48,6 +48,10 @@
     "iFast": {
       "domain_suffix": 17
     },
+    "Tello": {
+      "domain": 2,
+      "domain_suffix": 1
+    },
     "CrackBypass": {
       "domain": 4
     },
@@ -58,8 +62,8 @@
   },
   "output": {
     "direct": {
-      "domain": 25,
-      "domain_suffix": 244,
+      "domain": 27,
+      "domain_suffix": 245,
       "domain_keyword": 17,
       "domain_regex": 12,
       "ip_cidr": 13
